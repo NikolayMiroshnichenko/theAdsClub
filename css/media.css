@@ -37,16 +37,17 @@
     .price-discount {
         font-size: 16px;
     }
+    .footer-list__item,
     .footer-text,
     .footer-content,
     .row-btn {
         font-size: 14px;
     }
     .footer-wrapper {
-        height: 520px;
+        height: 500px;
     }
     .footer {
-        padding-top: 160px;
+        padding-top: 200px;
     }
 }
 @media (max-width: 1240px) {
@@ -61,7 +62,7 @@
         height: 460px;
     }
     .footer {
-        padding-top: 120px;
+        padding-top: 160px;
         width: 70%;
     }   
 }
@@ -83,7 +84,7 @@
         width: 95%;
     }
     .footer {
-        padding-top: 100px;
+        padding-top: 140px;
         width: 80%;
     }
     .main-decriptions__premium,
@@ -100,9 +101,15 @@
     .footer-wrapper {
         height: 400px;
     }
-    .footer-content {
-        margin-bottom: 20px;
+    .footer-list {
+        margin-bottom: 40px;
     }
+    .footer-list__item,
+    .footer-content,
+    .footer-text {
+        font-size: 12px;
+    }
+
 }
 @media (max-width: 768px) {
     .main-img {
@@ -199,13 +206,17 @@
     }
     .footer-wrapper {
         height: 600px;
-        background-image: url(../img/footer/footer-mobil.png);
-    }
-    .footer-content {
-        width: 100%;
+        background-image: url(../img/footer/footer-mobil.svg);
     }
     .footer {
         padding-top: 140px;
+    }
+    .footer-list {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-list__item {
+        margin-bottom: 20px;
     }
 }
 @media (max-width: 560px) {
@@ -219,7 +230,7 @@
     }
     .header-wrraper {
         padding: 40px 0 80px 0;
-        background-image: url(../img/header/mobil-bg.png);
+        background-image: url(../img/header/mobil-bg.svg);
         margin-bottom: 0;
     }
     .main {
@@ -247,6 +258,13 @@
     .footer-content {
         font-size: 12px;
     }
+    .footer-list {
+        margin-bottom: 30px;
+    }
+    .footer-list__item {
+        margin-bottom: 10px;
+    }
+
 }
 
 
