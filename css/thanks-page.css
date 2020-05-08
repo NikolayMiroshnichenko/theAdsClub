@@ -1,0 +1,405 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #e5e5e5;
+}
+.container-max {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+.container {
+    width: 85%;
+    margin: 0 auto;
+}
+.main-wrapper {
+    position: relative;
+}
+.main-bg {
+    width: 30%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    background-image: url(../img/thanks-page/header-bg.svg);
+    background-position: 0% 0%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+.header {
+    position: relative;
+    padding: 40px 0;
+    z-index: 1;
+}
+.logo {
+    display: block;
+    width: 115px;
+    height: 58px;
+    font-size: 0;
+    background-image: url(../img/header/logo.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.main {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 80px;
+}
+.main-title {
+    position: relative;
+    width: 60%;
+    font-weight: 800;
+    font-size: 34px;
+    margin: 0 auto;
+    padding-left: 100px;
+    margin-bottom: 80px;
+}
+.main-title::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 75px;
+    height: 75%;
+    background-image: url(../img/thanks-page/title-icon.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.main-title span {
+    color: #146fb6;
+}
+.main-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-list__img {
+    width: 35%;
+}
+.main-list__img img {
+    display: block;
+    width: 100%;
+}
+.main-list-content {
+    width: 50%;
+    margin-left: 100px;
+}
+.main-list-content__des {
+    font-size: 30px;
+    font-size: 500;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+.main-list-content__text {
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 1.6;
+    color: #ff3b3b;
+}
+.instruction {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+.instruction-content,
+.instruction-video {
+    width: 48%;
+}
+.video {
+    width: 100%;
+    height: 540px;
+}
+.instruction-content__title,
+.instruction-video h2 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 40px;
+}
+.instruction-content__title {
+    text-align: left;
+}
+.instruction-list {
+    padding-left: 0;
+    list-style-type: none;
+    margin: 0;
+}
+.instruction-list li {
+    margin-bottom: 60px;
+}
+.instruction-list__text,
+.instruction-list__title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.instruction-list__text-arrow {
+    position: relative;
+    margin-bottom: 80px;
+
+}
+.instruction-list__text-arrow::before {
+    position: absolute;
+    content: "";
+    right: 10%;
+    top: 100%;
+    width: 40px;
+    height: 90px;
+    background-image: url(../img/thanks-page/arrow.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.instruction-list__text {
+    font-weight: 500;
+    line-height: 1.4;
+}
+.instruction-list__text span {
+    font-weight: 800;
+}
+.instruction-list__btn {
+    position: relative;
+    display: block;
+    width: 80%;
+    padding: 24px 0 24px 100px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: #3896ff;
+    color: #ffffff;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.instruction-list__btn span {
+    display: block;
+    font-weight: 400;
+    font-size: 16px;
+}
+.instruction-list__btn::before {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    content: "";
+    width: 70px;
+    height: 70px;
+    background-image: url(../img/thanks-page/btn-icon.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.ticket-wrapper {
+    margin-bottom: 240px;
+}
+.ticket {
+    position: relative;
+    width: 768px;
+    height: 350px;
+    display: flex;
+    border-radius: 40px;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-bottom: 80px;
+}
+.ticket::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 40px;
+    transform: translateY(-50%);
+    width: 270px;
+    height: 270px;
+    background-image: url(../img/thanks-page/tiken-bg.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    z-index: 1;
+}
+.ticket-firs {
+    position: relative;
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+    background-color: #ffffff;
+}
+.ticket-firs::before {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    transform: translate(50%, -70%);
+    width: 60px;
+    height: 60px;
+    background-color: #e5e5e5;
+    border-radius: 50%;
+}
+.ticket-firs::after {
+    position: absolute;
+    content: "";
+    right: 0;
+    bottom: 0;
+    transform: translate(50%, 70%);
+    width: 60px;
+    height: 60px;
+    background-color: #e5e5e5;
+    border-radius: 50%;
+}
+.ticket-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 20px;
+}
+.ticket-data__data,
+.ticket-data__time {
+    text-align: right;
+    margin: 0;
+}
+.ticket-data__time {
+    position: relative;
+    font-weight: 800;
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+.ticket-data__time span {
+    display: block;
+    font-weight: 500;
+    font-size: 24px;
+}
+.ticket-data__data {
+    position: relative;
+    font-size: 90px;
+    font-weight: 800;
+    color: #f9bf6b;
+    line-height: 1;
+}
+.ticket-data__data span {
+    display: block;
+    font-size: 40px;
+}
+.ticket-data__data::before {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: -20px;
+    width: 70px;
+    height: 6px;
+    background-color: #f9bf6b;
+}
+.ticket-second {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9bf6b;
+    border-top-left-radius: -50px;
+}
+.ticket-second h2 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 800;
+    margin: 0;
+    line-height: 1;
+}
+.ticket-second h2 span {
+    font-size: 20px;
+    margin: 0;
+}
+.ticket-btn {
+    position: relative;
+    display: block;
+    width: 40%;
+    padding: 24px 0 24px 100px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: #3896ff;
+    color: #ffffff;
+    margin: 0 auto;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.ticket-btn span {
+    display: block;
+    font-weight: 400;
+    font-size: 16px;
+}
+.ticket-btn::before {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    content: "";
+    width: 70px;
+    height: 70px;
+    background-image: url(../img/thanks-page/btn-icon.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.footer-desing {
+    position: relative;
+    width: 100%;
+}
+.footer-desing__item {
+    position: absolute;
+    left: 50%;
+    top: -200px;
+    width: 700px;
+    height: 450px;
+    transform: translateX(-50%);
+    background-image: url(../img/thanks-page/people.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    z-index: 0;
+}
+.footer-wrapper {
+    position: relative;
+    width: 100%;
+    height: 580px;
+    background-image: url(../img/footer/footer-bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    z-index: 1;
+}
+.footer {
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 220px;
+}
+.footer-content {
+    font-size: 16px;
+    color: #ffffff;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+.footer-text {
+    font-size: 16px;
+    color: #ffffff;
+    line-height: 1.6;
+}
+.footer-text a {
+    color: #ffffff;
+    font-weight: 600;
+}
+.footer-list {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 60px;
+}
+.footer-list__item {
+    color: #ffffff;
+    text-decoration: none;
+}
+.footer-list__item:hover {
+    text-decoration: underline;
+}
